@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="778947b9-83ac-45bc-adbd-1012cfdee2be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_constructor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_logout.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_personal_account.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_registration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_personal_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_personal_account.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,12 +37,45 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests for test_personal_account.TestPersonalAccount.test_click_on_logo.executor": "Run",
+    "Python tests.Python tests for test_personal_account.TestPersonalAccount.test_jump_to_constructor.executor": "Run",
+    "Python tests.Python tests in test_personal_account.py.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ignore.virus.scanning.warn.message": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Python tests for test_personal_account.TestPersonalAccount.test_click_on_logo">
+    <configuration name="Python tests for test_personal_account.TestPersonalAccount.test_click_on_logo" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_5" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_personal_account.TestPersonalAccount.test_click_on_logo&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_personal_account.TestPersonalAccount.test_jump_to_constructor" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_5" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_personal_account.TestPersonalAccount.test_jump_to_constructor&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests in test_personal_account.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Sprint_5" />
       <option name="ENV_FILES" value="" />
@@ -69,6 +93,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_personal_account.TestPersonalAccount.test_click_on_logo" />
+        <item itemvalue="Python tests.Python tests for test_personal_account.TestPersonalAccount.test_jump_to_constructor" />
         <item itemvalue="Python tests.Python tests in test_personal_account.py" />
       </list>
     </recent_temporary>
