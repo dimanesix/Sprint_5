@@ -1,44 +1,26 @@
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 import test_data
+import locators
 
 
 class TestConstructorForm:
 
-    def test_jump_to_sauces(self):
-        driver = webdriver.Chrome()
+    def test_jump_to_sauces(self, choose_sauces):
+        driver = choose_sauces
 
-        driver.get(test_data.MAIN_PAGE_URL)
-
-        driver.delete_all_cookies()
-
-        element = driver.find_element(By.XPATH, './/h2[text()="Соусы"]')
-
-        driver.execute_script("arguments[0].scrollIntoView();", element)
-
-        assert 'tab_tab_type_current__2BEPc' in driver.find_element(By.XPATH,
-                                                                    './/span[text()="Соусы"]/parent::div').get_attribute(
-            'class')
+        assert test_data.ACTIVE_SECTION in driver.find_element(By.XPATH, locators.SAUCES).get_attribute('class')
 
         driver.quit()
-    def test_jump_to_bread(self):
-        driver = webdriver.Chrome()
 
-        driver.get(test_data.MAIN_PAGE_URL)
+    def test_jump_to_bread(self, choose_sauces):
+        driver = choose_sauces
 
-        driver.delete_all_cookies()
+        element = driver.find_element(By.XPATH, locators.BREAD_SECTION)
 
-        element = driver.find_element(By.XPATH, './/h2[text()="Соусы"]')
+        driver.execute_script(test_data.SCROLL_SCRIPT, element)
 
-        driver.execute_script("arguments[0].scrollIntoView();", element)
-
-        element = driver.find_element(By.XPATH, './/h2[text()="Булки"]')
-
-        driver.execute_script("arguments[0].scrollIntoView();", element)
-
-        assert 'tab_tab_type_current__2BEPc' in driver.find_element(By.XPATH,
-                                                                    './/span[text()="Булки"]/parent::div').get_attribute(
-            'class')
+        assert test_data.ACTIVE_SECTION in driver.find_element(By.XPATH, locators.BREAD).get_attribute('class')
 
         driver.quit()
 
@@ -47,14 +29,10 @@ class TestConstructorForm:
 
         driver.get(test_data.MAIN_PAGE_URL)
 
-        driver.delete_all_cookies()
+        element = driver.find_element(By.XPATH, locators.TOPING_SECTION)
 
-        element = driver.find_element(By.XPATH, './/h2[text()="Начинки"]')
+        driver.execute_script(test_data.SCROLL_SCRIPT, element)
 
-        driver.execute_script("arguments[0].scrollIntoView();", element)
-
-        assert 'tab_tab_type_current__2BEPc' in driver.find_element(By.XPATH,
-                                                                    './/span[text()="Начинки"]/parent::div').get_attribute(
-            'class')
+        assert test_data.ACTIVE_SECTION in driver.find_element(By.XPATH, locators.TOPPING).get_attribute('class')
 
         driver.quit()

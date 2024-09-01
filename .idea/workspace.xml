@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="778947b9-83ac-45bc-adbd-1012cfdee2be" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/locators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_constructor.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_constructor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_logout.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_logout.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_personal_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_personal_account.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_registration.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_registration.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,17 +48,24 @@
     "Python tests.Python tests for test_constructor.TestConstructorForm.test_jump_to_sauces.executor": "Run",
     "Python tests.Python tests for test_constructor.TestConstructorForm.test_jump_to_topping.executor": "Run",
     "Python tests.Python tests for test_constructor.TestConstructorForm.test_scroll_to_sauces.executor": "Run",
+    "Python tests.Python tests for test_login.TestLogInAccount.executor": "Run",
+    "Python tests.Python tests for test_login.TestLogInAccount.test_log_in_to_account_main_page.executor": "Run",
+    "Python tests.Python tests for test_logout.TestLogoutAccount.executor": "Run",
     "Python tests.Python tests for test_logout.TestLogoutAccount.test_logout_from_account.executor": "Run",
     "Python tests.Python tests for test_personal_account.TestPersonalAccount.test_click_on_logo.executor": "Run",
     "Python tests.Python tests for test_personal_account.TestPersonalAccount.test_jump_to_constructor.executor": "Run",
+    "Python tests.Python tests in Sprint_5.executor": "Run",
+    "Python tests.Python tests in test_logout.py.executor": "Run",
     "Python tests.Python tests in test_personal_account.py.executor": "Run",
+    "Python tests.pytest for tests.test_login.TestLogInAccount.executor": "Run",
+    "Python tests.pytest for tests.test_personal_account.TestPersonalAccount.test_enter_to_personal_account.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ignore.virus.scanning.warn.message": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests for test_constructor.TestConstructorForm.test_jump_to_topping">
-    <configuration name="Python tests for test_constructor.TestConstructorForm.test_jump_to_bread" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests in Sprint_5">
+    <configuration name="Python tests for test_logout.TestLogoutAccount" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Sprint_5" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -64,26 +76,26 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_constructor.TestConstructorForm.test_jump_to_bread&quot;" />
+      <option name="_new_target" value="&quot;test_logout.TestLogoutAccount&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_constructor.TestConstructorForm.test_jump_to_sauces" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in Sprint_5" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Sprint_5" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_constructor.TestConstructorForm.test_jump_to_sauces&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_constructor.TestConstructorForm.test_jump_to_topping" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_logout.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Sprint_5" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,11 +106,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_constructor.TestConstructorForm.test_jump_to_topping&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_logout.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_constructor.TestConstructorForm.test_scroll_to_sauces" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_personal_account.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Sprint_5" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,32 +121,34 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_constructor.TestConstructorForm.test_scroll_to_sauces&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_personal_account.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_logout.TestLogoutAccount.test_logout_from_account" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for tests.test_personal_account.TestPersonalAccount.test_enter_to_personal_account" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Sprint_5" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="SDK_HOME" value="C:\Users\ixi_d\PycharmProjects\5\Sprint_5\.venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_logout.TestLogoutAccount.test_logout_from_account&quot;" />
+      <option name="_new_target" value="&quot;tests.test_personal_account.TestPersonalAccount.test_enter_to_personal_account&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_constructor.TestConstructorForm.test_jump_to_topping" />
-        <item itemvalue="Python tests.Python tests for test_constructor.TestConstructorForm.test_jump_to_bread" />
-        <item itemvalue="Python tests.Python tests for test_constructor.TestConstructorForm.test_jump_to_sauces" />
-        <item itemvalue="Python tests.Python tests for test_constructor.TestConstructorForm.test_scroll_to_sauces" />
-        <item itemvalue="Python tests.Python tests for test_logout.TestLogoutAccount.test_logout_from_account" />
+        <item itemvalue="Python tests.Python tests in Sprint_5" />
+        <item itemvalue="Python tests.Python tests in test_personal_account.py" />
+        <item itemvalue="Python tests.pytest for tests.test_personal_account.TestPersonalAccount.test_enter_to_personal_account" />
+        <item itemvalue="Python tests.Python tests in test_logout.py" />
+        <item itemvalue="Python tests.Python tests for test_logout.TestLogoutAccount" />
       </list>
     </recent_temporary>
   </component>

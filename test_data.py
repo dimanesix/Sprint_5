@@ -10,3 +10,6 @@ VALID_PASSWORD = '123456'
 
 ONE_SYMBOL_PASSWORD = '1'
 ERROR_TEXT_FOR_INCORRECT_PWD = 'Некорректный пароль'
+
+SCROLL_SCRIPT = 'arguments[0].scrollIntoView();'
+ACTIVE_SECTION = 'tab_tab_type_current__2BEPc'

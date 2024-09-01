@@ -1,37 +1,18 @@
 from selenium.webdriver.common.by import By
-from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 import test_data
+import locators
 
 
 class TestPersonalAccount:
-    def test_enter_to_personal_account(self):
-        driver = webdriver.Chrome()
-
-        driver.get(test_data.MAIN_PAGE_URL)
-
-        driver.delete_all_cookies()
-
-        driver.find_element(By.XPATH, './/button[text()="Войти в аккаунт"]').click()
+    def test_enter_to_personal_account(self, login):
+        driver = login
 
         WebDriverWait(driver, 3).until(
-            expected_conditions.visibility_of_all_elements_located((By.CLASS_NAME, 'Auth_login__3hAey')))
+            expected_conditions.visibility_of_all_elements_located((By.CLASS_NAME, locators.HEADER_NAV_PANEL)))
 
-        driver.find_element(By.XPATH, './/div[@class="input pr-6 pl-6 input_type_text '
-                                      'input_size_default"]/input[@class="text input__textfield '
-                                      'text_type_main-default"]').send_keys(test_data.VALID_EMAIL)
-
-        driver.find_element(By.XPATH, './/div[@class="input pr-6 pl-6 input_type_password input_size_default"]/input['
-                                      '@class="text input__textfield text_type_main-default"]').send_keys(
-            test_data.VALID_PASSWORD)
-
-        driver.find_element(By.XPATH, './/button[text()="Войти"]').click()
-
-        WebDriverWait(driver, 3).until(
-            expected_conditions.visibility_of_all_elements_located((By.CLASS_NAME, 'AppHeader_header__nav__g5hnF')))
-
-        driver.find_element(By.XPATH, './/p[text()="Личный Кабинет"]/parent::a').click()
+        driver.find_element(By.XPATH, locators.BUTTON_PERSONAL_ACCOUNT).click()
 
         WebDriverWait(driver, 3).until(expected_conditions.url_to_be(test_data.PROFILE_PAGE_URL))
 
@@ -39,37 +20,18 @@ class TestPersonalAccount:
 
         driver.quit()
 
-    def test_click_on_constructor(self):
-        driver = webdriver.Chrome()
-
-        driver.get(test_data.MAIN_PAGE_URL)
-
-        driver.delete_all_cookies()
-
-        driver.find_element(By.XPATH, './/button[text()="Войти в аккаунт"]').click()
+    def test_click_on_constructor(self, login):
+        driver = login
 
         WebDriverWait(driver, 3).until(
-            expected_conditions.visibility_of_all_elements_located((By.CLASS_NAME, 'Auth_login__3hAey')))
+            expected_conditions.visibility_of_all_elements_located((By.CLASS_NAME, locators.HEADER_NAV_PANEL)))
 
-        driver.find_element(By.XPATH, './/div[@class="input pr-6 pl-6 input_type_text '
-                                      'input_size_default"]/input[@class="text input__textfield '
-                                      'text_type_main-default"]').send_keys(test_data.VALID_EMAIL)
-
-        driver.find_element(By.XPATH, './/div[@class="input pr-6 pl-6 input_type_password input_size_default"]/input['
-                                      '@class="text input__textfield text_type_main-default"]').send_keys(
-            test_data.VALID_PASSWORD)
-
-        driver.find_element(By.XPATH, './/button[text()="Войти"]').click()
+        driver.find_element(By.XPATH, locators.BUTTON_PERSONAL_ACCOUNT).click()
 
         WebDriverWait(driver, 3).until(
-            expected_conditions.visibility_of_all_elements_located((By.CLASS_NAME, 'AppHeader_header__nav__g5hnF')))
+            expected_conditions.visibility_of_all_elements_located((By.CLASS_NAME, locators.HEADER_NAV_PANEL)))
 
-        driver.find_element(By.XPATH, './/p[text()="Личный Кабинет"]/parent::a').click()
-
-        WebDriverWait(driver, 3).until(expected_conditions.visibility_of_all_elements_located((By.CLASS_NAME, 'AppHeader_header__X9aJA')))
-
-        driver.find_element(By.XPATH, './/p[@class="AppHeader_header__linkText__3q_va ml-2"][text('
-                                      ')="Конструктор"]/parent::a').click()
+        driver.find_element(By.XPATH, locators.BUTTON_CONSTRUCTOR).click()
 
         WebDriverWait(driver, 3).until(
             expected_conditions.url_to_be(test_data.MAIN_PAGE_URL))
@@ -78,36 +40,13 @@ class TestPersonalAccount:
 
         driver.quit()
 
-    def test_click_on_logo(self):
-        driver = webdriver.Chrome()
-
-        driver.get(test_data.MAIN_PAGE_URL)
-
-        driver.delete_all_cookies()
-
-        driver.find_element(By.XPATH, './/button[text()="Войти в аккаунт"]').click()
+    def test_click_on_logo(self, login):
+        driver = login
 
         WebDriverWait(driver, 3).until(
-            expected_conditions.visibility_of_all_elements_located((By.CLASS_NAME, 'Auth_login__3hAey')))
+            expected_conditions.visibility_of_all_elements_located((By.CLASS_NAME, locators.HEADER_NAV_PANEL)))
 
-        driver.find_element(By.XPATH, './/div[@class="input pr-6 pl-6 input_type_text '
-                                      'input_size_default"]/input[@class="text input__textfield '
-                                      'text_type_main-default"]').send_keys(test_data.VALID_EMAIL)
-
-        driver.find_element(By.XPATH, './/div[@class="input pr-6 pl-6 input_type_password input_size_default"]/input['
-                                      '@class="text input__textfield text_type_main-default"]').send_keys(
-            test_data.VALID_PASSWORD)
-
-        driver.find_element(By.XPATH, './/button[text()="Войти"]').click()
-
-        WebDriverWait(driver, 3).until(
-            expected_conditions.visibility_of_all_elements_located((By.CLASS_NAME, 'AppHeader_header__nav__g5hnF')))
-
-        driver.find_element(By.XPATH, './/p[text()="Личный Кабинет"]/parent::a').click()
-
-        WebDriverWait(driver, 3).until(expected_conditions.visibility_of_all_elements_located((By.CLASS_NAME, 'AppHeader_header__X9aJA')))
-
-        driver.find_element(By.XPATH, './/div[@class="AppHeader_header__logo__2D0X2"]/a').click()
+        driver.find_element(By.XPATH, locators.LOGO_STELLAR_BURGERS).click()
 
         WebDriverWait(driver, 3).until(
             expected_conditions.url_to_be(test_data.MAIN_PAGE_URL))
