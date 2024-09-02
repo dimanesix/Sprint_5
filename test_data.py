@@ -1,8 +1,8 @@
 MAIN_PAGE_URL = 'https://stellarburgers.nomoreparties.site/'
-REGISTRATION_PAGE_URL = 'https://stellarburgers.nomoreparties.site/register'
-LOGIN_PAGE_URL = 'https://stellarburgers.nomoreparties.site/login'
-FORGOT_PASSWORD_PAGE = 'https://stellarburgers.nomoreparties.site/forgot-password'
-PROFILE_PAGE_URL = 'https://stellarburgers.nomoreparties.site/account/profile'
+REGISTRATION_PAGE_URL = f'{MAIN_PAGE_URL}/register'
+LOGIN_PAGE_URL = f'{MAIN_PAGE_URL}/login'
+FORGOT_PASSWORD_PAGE = f'{MAIN_PAGE_URL}/forgot-password'
+PROFILE_PAGE_URL = f'{MAIN_PAGE_URL}/account/profile'
 
 VALID_NAME = 'Дмитрий'
 VALID_EMAIL = 'dmitriimitin13123@yandex.ru'

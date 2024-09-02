@@ -28,7 +28,8 @@ def login():
 
     driver.find_element(By.XPATH, locators.BUTTON_LOGIN_AUTH).click()
 
-    return driver
+    yield driver
+    driver.quit()
 
 @pytest.fixture()
 def choose_sauces():
@@ -40,7 +41,8 @@ def choose_sauces():
 
     driver.execute_script(test_data.SCROLL_SCRIPT, element)
 
-    return driver
+    yield driver
+    driver.quit()
 
 @pytest.fixture()
 def generate_email():

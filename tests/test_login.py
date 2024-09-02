@@ -14,7 +14,6 @@ class TestLogInAccount:
 
         assert driver.current_url == test_data.MAIN_PAGE_URL and driver.find_element(By.XPATH, locators.BUTTON_SET_AN_ORDER)
 
-        driver.quit()
 
     def test_button_personal_account_main_page(self):
         driver = webdriver.Chrome()

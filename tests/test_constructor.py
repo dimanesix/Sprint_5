@@ -11,7 +11,6 @@ class TestConstructorForm:
 
         assert test_data.ACTIVE_SECTION in driver.find_element(By.XPATH, locators.SAUCES).get_attribute('class')
 
-        driver.quit()
 
     def test_jump_to_bread(self, choose_sauces):
         driver = choose_sauces
@@ -22,7 +21,6 @@ class TestConstructorForm:
 
         assert test_data.ACTIVE_SECTION in driver.find_element(By.XPATH, locators.BREAD).get_attribute('class')
 
-        driver.quit()
 
     def test_jump_to_topping(self):
         driver = webdriver.Chrome()
@@ -34,5 +32,3 @@ class TestConstructorForm:
         driver.execute_script(test_data.SCROLL_SCRIPT, element)
 
         assert test_data.ACTIVE_SECTION in driver.find_element(By.XPATH, locators.TOPPING).get_attribute('class')
-
-        driver.quit()

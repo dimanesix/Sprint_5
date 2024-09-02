@@ -18,7 +18,6 @@ class TestPersonalAccount:
 
         assert driver.current_url == test_data.PROFILE_PAGE_URL
 
-        driver.quit()
 
     def test_click_on_constructor(self, login):
         driver = login
@@ -38,8 +37,6 @@ class TestPersonalAccount:
 
         assert driver.current_url == test_data.MAIN_PAGE_URL
 
-        driver.quit()
-
     def test_click_on_logo(self, login):
         driver = login
 
@@ -52,5 +49,3 @@ class TestPersonalAccount:
             expected_conditions.url_to_be(test_data.MAIN_PAGE_URL))
 
         assert driver.current_url == test_data.MAIN_PAGE_URL
-
-        driver.quit()

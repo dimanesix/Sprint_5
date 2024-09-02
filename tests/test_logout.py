@@ -21,5 +21,3 @@ class TestLogoutAccount:
         WebDriverWait(driver, 3).until(expected_conditions.url_to_be(test_data.LOGIN_PAGE_URL))
 
         assert driver.current_url == test_data.LOGIN_PAGE_URL
-
-        driver.quit()
