@@ -19,7 +19,7 @@ def login():
     driver.find_element(By.XPATH, locators.BUTTON_LOG_IN_ACCOUNT).click()
 
     WebDriverWait(driver, 3).until(
-        expected_conditions.visibility_of_all_elements_located((By.CLASS_NAME, locators.AUTH_LOGIN_FORM)))
+        expected_conditions.visibility_of_all_elements_located((By.XPATH, locators.AUTH_LOGIN_FORM)))
 
     driver.find_element(By.XPATH, locators.AUTH_EMAIL_FIELD).send_keys(test_data.VALID_EMAIL)
 

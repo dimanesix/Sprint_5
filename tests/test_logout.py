@@ -10,7 +10,7 @@ class TestLogoutAccount:
         driver = login
 
         WebDriverWait(driver, 3).until(
-            expected_conditions.visibility_of_all_elements_located((By.CLASS_NAME, locators.HEADER_NAV_PANEL)))
+            expected_conditions.visibility_of_all_elements_located((By.XPATH, locators.HEADER_NAV_PANEL)))
 
         driver.find_element(By.XPATH, locators.BUTTON_PERSONAL_ACCOUNT).click()
 
