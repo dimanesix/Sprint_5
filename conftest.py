@@ -31,6 +31,22 @@ def login():
     yield driver
     driver.quit()
 
+@pytest.fixture
+def driver(request):
+    data = request.param
+
+    driver = webdriver.Chrome()
+
+    driver.get(data[0])
+
+    driver.delete_all_cookies()
+
+    driver.find_element(By.XPATH, data[1]).click()
+
+    WebDriverWait(driver, 3).until(expected_conditions.url_to_be(test_data.LOGIN_PAGE_URL))
+
+    yield driver
+    driver.quit()
 @pytest.fixture()
 def choose_sauces():
     driver = webdriver.Chrome()
